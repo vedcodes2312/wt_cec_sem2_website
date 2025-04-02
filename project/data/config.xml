@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payease>
+    <settings>
+        <company>
+            <name>PayEase India</name>
+            <founded>2024</founded>
+            <headquarters>Mumbai, India</headquarters>
+            <support>
+                <email>support@payease.in</email>
+                <phone>1800-123-4567</phone>
+                <hours>24x7</hours>
+            </support>
+        </company>
+        <features>
+            <upi>
+                <dailyLimit>200000</dailyLimit>
+                <minAmount>1</minAmount>
+                <maxAmount>100000</maxAmount>
+            </upi>
+            <investments>
+                <goldRate>5505</goldRate>
+                <minSIP>500</minSIP>
+                <fdRates>
+                    <months value="3">5.5</months>
+                    <months value="6">6.0</months>
+                    <months value="12">6.5</months>
+                    <months value="24">7.0</months>
+                </fdRates>
+            </investments>
+            <insurance>
+                <minAge>18</minAge>
+                <maxAge>70</maxAge>
+                <minCoverage>100000</minCoverage>
+                <rates>
+                    <life>0.0004</life>
+                    <health>0.0003</health>
+                    <vehicle>
+                        <twoWheeler>0.0002</twoWheeler>
+                        <fourWheeler>0.0003</fourWheeler>
+                    </vehicle>
+                </rates>
+            </insurance>
+            <loans>
+                <interestRates>
+                    <personal>12</personal>
+                    <home>8.5</home>
+                    <business>15</business>
+                    <education>9</education>
+                </interestRates>
+                <maxMultiplier>10</maxMultiplier>
+            </loans>
+        </features>
+    </settings>
+</payease>

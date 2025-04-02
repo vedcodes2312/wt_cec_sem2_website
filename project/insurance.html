@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance - PayEase India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PayEase India</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upi.html">UPI Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investments.html">Investments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="insurance.html">Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loans.html">Loans</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Insurance Calculator -->
+    <div class="container py-5">
+        <h2 class="text-center mb-5">Insurance Calculator</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="insuranceForm">
+                            <div class="mb-3">
+                                <label class="form-label">Insurance Type</label>
+                                <select class="form-select" id="insuranceType">
+                                    <option value="life">Life Insurance</option>
+                                    <option value="health">Health Insurance</option>
+                                    <option value="vehicle">Vehicle Insurance</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Age</label>
+                                <input type="number" class="form-control" id="age" min="18" max="70">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Coverage Amount (₹)</label>
+                                <input type="number" class="form-control" id="coverage" min="100000" step="100000">
+                            </div>
+                            <div class="mb-3" id="vehicleFields" style="display: none;">
+                                <label class="form-label">Vehicle Type</label>
+                                <select class="form-select" id="vehicleType">
+                                    <option value="2wheeler">Two Wheeler</option>
+                                    <option value="4wheeler">Four Wheeler</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Calculate Premium</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Details -->
+    <div class="container py-4" id="premiumDetails" style="display: none;">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Premium Details</h4>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <p>Monthly Premium: <span id="monthlyPremium">₹0</span></p>
+                                <p>Annual Premium: <span id="annualPremium">₹0</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Coverage Amount: <span id="coverageDisplay">₹0</span></p>
+                                <p>Policy Term: <span id="policyTerm">1 Year</span></p>
+                            </div>
+                        </div>
+                        <button class="btn btn-success w-100 mt-3" id="buyInsurance">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>PayEase India</h5>
+                    <p>Making financial services accessible to all</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                        <li><a href="#" class="text-light">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@payease.in<br>
+                    Phone: 1800-123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/insurance.js"></script>
+</body>
+</html>
